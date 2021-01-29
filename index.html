@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!---- Css Link -------->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="row">
+		<!---- Length Conversion ---->
+		<div class="col-sm-3" id="box1">
+			<p>Find the Length Unit</p>
+			 <div class="form-group">
+		    	<input type="number" name="text" class="form-control" placeholder="Enter Value" id="input">
+		     </div>
+		<div>
+		    <span> Form:- </span>
+		    <select class="custom-select" id="from_select">
+		    	<option>Kilo-Meter</option>
+			    <option>Hecto-Meter</option>
+			    <option>Deca-Meter</option>
+			    <option>Meter</option>
+			    <option>Deci-Meter</option>
+			    <option>Centi-Meter</option>
+			    <option>Mili-Meter</option>
+			    <option>Micro-Meter</option>
+			    <option>Nano-Meter</option>
+		    </select>
+
+		    <span>To:-</span>
+		    <select class="custom-select" id="to_select">
+		    	<option>Kilo-Meter</option>
+			    <option>Hecto-Meter</option>
+			    <option>Deca-Meter</option>
+			    <option>Meter</option>
+			    <option>Deci-Meter</option>
+			    <option>Centi-Meter</option>
+			    <option>Mili-Meter</option>
+			    <option>Micro-Meter</option>
+			    <option>Nano-Meter</option>
+		    </select>
+		</div>
+		    <div class="button1">
+		    	<button class="btn" id="btn1" onclick="calculate()">Check</button>
+		    </div>
+		</div>
+
+		<!---- Find Quabe Root And Square Root ---->
+		<div class="col-sm-3" id="box2">
+			<p>Find Quabe Root And Square Root</p>
+			<div class="form-group">
+		    		<input type="Number" name="num" class="form-control" placeholder="Enter Number" id="num">
+		    		<input type="Number" name="num" class="form-control" placeholder="Enter Power value" id="power">
+		    </div>
+		    <div class="button2">
+		    	<button class="btn" id="btn2" onclick="findRoot()">Answer</button>
+		    </div>
+		    
+	    </div>
+
+	    <!---- Calculate Discount ----->
+	    <div class="col-sm-3" id="box3">
+	    	<p>Find Discount Calculation</p>
+	    	<div class="form-group">
+	    		<input type="number" class="form-control" placeholder="Enter Price" id="price">
+	    		<input type="number" class="form-control" placeholder="Discount Value" id="discount">
+	    	</div>
+	    	<div class="button3">
+	    		<button class="btn" id="btn3" onclick="calcDiscount()">Calculate</button>
+	    	</div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
